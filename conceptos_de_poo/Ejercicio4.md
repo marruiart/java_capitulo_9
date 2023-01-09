@@ -1,16 +1,9 @@
 > @author: Marina Ruiz Artacho
 
-#### Ejercicio3
-**¿Cuáles serían los atributos de la clase Vivienda?**
-* String direccion
-* String barrio
-* Int numeroHabitaciones
-* Float metrosCuadrados
-* Boolean tienePiscina
-* Float precio
-
-**¿Qué subclases se te ocurren?**
-* Chalet
-* Adosado
-* Piso
-* Apartamento
+#### Ejercicio4
+**Piensa en la liga de baloncesto, ¿qué 5 clases se te ocurren para representar 5 elementos distintos que intervengan en la liga?**
+* Jugador
+* Arbitro
+* Entrenador
+* Partido
+* Equipo
