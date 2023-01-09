@@ -1,9 +1,19 @@
 > @author: Marina Ruiz Artacho
 
-#### Ejercicio4
-**Piensa en la liga de baloncesto, ¿qué 5 clases se te ocurren para representar 5 elementos distintos que intervengan en la liga?**
-* Jugador
-* Arbitro
-* Entrenador
-* Partido
-* Equipo
+#### Ejercicio5
+**Haz una lista con los atributos que podría tener la clase caballo. A continuación haz una lista con los posibles métodos (acciones asociadas a los caballos).**
+
+* ATRIBUTOS
+  * String sexo
+  * String nombre
+  * String capa
+  * String raza
+  * int edad
+  * float velocidad
+  * float peso
+* MÉTODOS
+  * irAlPaso
+  * irAlTrote
+  * irAlGalope
+  * relinchar
+  * comer
