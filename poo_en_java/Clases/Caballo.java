@@ -1,4 +1,4 @@
-package Animales;
+package Clases;
 
 public class Caballo {
 

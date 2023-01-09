@@ -1,4 +1,4 @@
-package Vehiculos;
+package Clases;
 
 public class Bicicleta extends Vehiculo {
 

@@ -5,12 +5,14 @@
  * @author: Marina Ruiz Artacho
  **/
 
-import Animales.Caballo;
+import Clases.Caballo;
 
 public class Ejercicio1 {
     public static void main(String[] args) {
         Caballo perdigon = new Caballo("Perdigón", "Jaspeado", "Appaloosa", Caballo.Sexo.MACHO, "10-01-2017", 420);
 
+        String sexo = perdigon.sexo.equals(Caballo.Sexo.MACHO) ? "caballo" : "yegua";
+        System.out.printf("%s es un%s %s", perdigon.nombre, sexo.equals("caballo") ? "" : "a", sexo);
         if (perdigon.velocidad == 0)
             System.out.printf("%s está parado a %d km/h\n", perdigon.nombre, perdigon.velocidad);
         perdigon.irAlPaso();
@@ -18,7 +20,5 @@ public class Ejercicio1 {
         perdigon.irAlTrote();
         System.out.printf("%s va al trote a %d km/h\n", perdigon.nombre, perdigon.velocidad);
         perdigon.relincha();
-        String sexo = perdigon.sexo.equals(Caballo.Sexo.MACHO) ? "caballo" : "yegua";
-        System.out.printf("%s es un%s %s", perdigon.nombre, sexo.equals("caballo") ? "" : "a", sexo);
     }
 }

@@ -1,4 +1,4 @@
-package Matematicas;
+package Clases;
 
 public class Fraccion {
     private int numerador;

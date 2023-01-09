@@ -1,4 +1,4 @@
-package Matematicas;
+package Clases;
 
 public class Tiempo {
     int horas;

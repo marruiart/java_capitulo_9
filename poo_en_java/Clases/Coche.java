@@ -1,4 +1,4 @@
-package Vehiculos;
+package Clases;
 
 public class Coche extends Vehiculo {
     public String marca;

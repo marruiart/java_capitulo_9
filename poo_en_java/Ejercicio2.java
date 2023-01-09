@@ -7,7 +7,8 @@
  * @author: Marina Ruiz Artacho
  **/
 
-import Vehiculos.*;
+import Clases.Bicicleta;
+import Clases.Coche;
 
 import java.util.Scanner;
 

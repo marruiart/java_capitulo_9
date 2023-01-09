@@ -5,7 +5,7 @@
  * @author: Marina Ruiz Artacho
  **/
 
-import Matematicas.Fraccion;
+import Clases.Fraccion;
 
 public class Ejercicio4 {
     public static void main(String[] args) {
