@@ -1,19 +1,14 @@
 > @author: Marina Ruiz Artacho
 
-#### Ejercicio5
-**Haz una lista con los atributos que podría tener la clase caballo. A continuación haz una lista con los posibles métodos (acciones asociadas a los caballos).**
+#### Ejercicio6
+**Lista los atributos de la clase Alumno ¿Sería nombre uno de los atributos de la clase? Razona tu respuesta.**
+* String DNI
+* String nombre
+* String apellidos
+* String nacimiento
+* String asignatura
+* String telefono
+* String direccion
+* float notaMedia
 
-* ATRIBUTOS
-  * String sexo
-  * String nombre
-  * String capa
-  * String raza
-  * int edad
-  * float velocidad
-  * float peso
-* MÉTODOS
-  * public void alPaso() { }
-  * public void alTrote() { }
-  * public void alGalope() { }
-  * public void relincha() { } 
-  * public void come() { }
+Nombre es un atributo de la instancia de dicha clase, pero no debe confundirse el nombre que se le da a la variable de la instancia con el atributo del propio objeto.
