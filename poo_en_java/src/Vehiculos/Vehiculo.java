@@ -1,22 +1,24 @@
-package Clases;
+package Vehiculos;
 
-public class Vehiculo {
+abstract class Vehiculo {
 
     private static int vehiculosCreados = 0;
     private static int kilometrosTotales = 0;
-    public int kilometrosRecorridos;
 
-    public static int getKilometrosTotales(){
+    public static int getKilometrosTotales() {
         return kilometrosTotales;
     }
 
-    public void recorre(int km) {
-        kilometrosTotales += km;
-        kilometrosRecorridos += km;
+    public static int getVehiculosCreados() {
+        return vehiculosCreados;
     }
 
-    Vehiculo() {
-        this.kilometrosRecorridos = 0;
+    protected static void setKilometrosTotales(int km) {
+        kilometrosTotales += km;
+    }
+
+    public void crearVehiculo() {
+        vehiculosCreados += 1;
     }
 }
 
