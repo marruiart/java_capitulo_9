@@ -17,11 +17,9 @@ public class Fraccion {
     private static int mcd (int a, int b) {
         return b == 0 ? a : mcd(b, a % b);
     }
-    public String simplifica() {
+    public Fraccion simplifica() {
         int mcd = mcd(this.numerador, this.denominador);
-        this.numerador = this.numerador / mcd;
-        this.denominador = this.denominador / mcd;
-        return this.numerador + "/" + this.denominador;
+        return new Fraccion (this.numerador / mcd, this.denominador / mcd);
     }
 
     public Fraccion multiplica(Fraccion f) {
