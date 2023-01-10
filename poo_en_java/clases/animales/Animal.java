@@ -1,4 +1,4 @@
-package Clases;
+package clases.animales;
 
 public abstract class Animal {
     protected String dieta;

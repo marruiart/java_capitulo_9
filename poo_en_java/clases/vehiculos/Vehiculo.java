@@ -1,4 +1,4 @@
-package Clases;
+package clases.vehiculos;
 
 public abstract class Vehiculo {
     private static int vehiculosCreados;

@@ -9,7 +9,7 @@
  *
  * @author: Marina Ruiz Artacho
  **/
-import Clases.Tiempo;
+import clases.Tiempo;
 public class Ejercicio6 {
     public static void main(String[] args) {
         Tiempo t1 = new Tiempo(2, 30, 30);

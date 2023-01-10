@@ -1,17 +1,14 @@
-package Clases;
+package clases.vehiculos;
+
+import enums.Enums;
 
 public class Bicicleta extends Vehiculo {
-
-    public enum TipoBici {
-        URBANA, MOUNTAIN, PASEO, CARRETERA, BMX
-    }
-
-    public TipoBici tipo;
+    public Enums.TipoBici tipo;
     public int kilometrosRecorridos;
 
 
     // Constructor
-    public Bicicleta(TipoBici tipo) {
+    public Bicicleta(Enums.TipoBici tipo) {
         super();
         this.tipo = tipo;
         this.kilometrosRecorridos = 0;

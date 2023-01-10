@@ -5,7 +5,7 @@
  * @author: Marina Ruiz Artacho
  **/
 
-import Clases.Caballo;
+import clases.animales.Caballo;
 
 public class Ejercicio1 {
     public static void main(String[] args) {

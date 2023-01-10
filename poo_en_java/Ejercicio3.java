@@ -7,7 +7,7 @@
  * @author: Marina Ruiz Artacho
  **/
 
-import Clases.*;
+import clases.animales.*;
 
 public class Ejercicio3 {
     public static void main(String[] args) {

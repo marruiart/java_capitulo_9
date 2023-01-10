@@ -1,4 +1,4 @@
-package Clases;
+package clases.animales;
 
 public class Canario extends Ave{
     public Canario () {

@@ -5,7 +5,7 @@
  * @author: Marina Ruiz Artacho
  **/
 
-import Clases.Fraccion;
+import clases.Fraccion;
 
 public class Ejercicio4 {
     public static void main(String[] args) {

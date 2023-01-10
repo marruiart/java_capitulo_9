@@ -12,7 +12,7 @@
  * @author: Marina Ruiz Artacho
  **/
 
-import Clases.TarjetaRegalo;
+import clases.TarjetaRegalo;
 
 public class Ejercicio11 {
     public static void main(String[] args) {

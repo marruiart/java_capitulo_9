@@ -1,4 +1,4 @@
-package Clases;
+package clases;
 
 public class Terminal {
     private String numero;

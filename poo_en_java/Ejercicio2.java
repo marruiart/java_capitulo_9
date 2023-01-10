@@ -7,10 +7,9 @@
  * @author: Marina Ruiz Artacho
  **/
 
-import Clases.Bicicleta;
-import Clases.Coche;
-import Clases.Vehiculo;
-
+import clases.vehiculos.Bicicleta;
+import clases.vehiculos.Coche;
+import enums.Enums;
 import java.util.Scanner;
 
 public class Ejercicio2 {
@@ -33,7 +32,7 @@ public class Ejercicio2 {
         Coche pedro = new Coche("Renault", "Captur");
         Coche marta = new Coche("Peugeot", "205");
         Coche edu = new Coche("BMW", "X1");
-        Bicicleta sara = new Bicicleta(Bicicleta.TipoBici.BMX);
+        Bicicleta sara = new Bicicleta(Enums.TipoBici.BMX);
 
         System.out.printf("Pedro tiene un %s %s con %d km\n" +
                         "Marta tiene un %s %s con %d km\n" +

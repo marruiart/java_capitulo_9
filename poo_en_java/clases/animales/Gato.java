@@ -1,4 +1,4 @@
-package Clases;
+package clases.animales;
 
 public class Gato extends Mamifero{
     public Gato (Boolean esCachorro) {
