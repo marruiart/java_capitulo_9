@@ -7,7 +7,7 @@
  * @author: Marina Ruiz Artacho
  **/
 
-import clases.Terminal;
+import clases.terminales.Terminal;
 
 public class Ejercicio8 {
     public static void main(String[] args) {
