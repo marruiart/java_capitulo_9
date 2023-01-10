@@ -1,9 +1,13 @@
 package Clases;
 
 public abstract class Vehiculo {
+    private static int vehiculosCreados;
+    private static int kilometrosTotales;
 
-    private static int vehiculosCreados = 0;
-    private static int kilometrosTotales = 0;
+    Vehiculo () {
+        vehiculosCreados++;
+        kilometrosTotales = 0;
+    }
 
     public static int getKilometrosTotales() {
         return kilometrosTotales;
@@ -13,12 +17,8 @@ public abstract class Vehiculo {
         return vehiculosCreados;
     }
 
-    protected static void setKilometrosTotales(int km) {
-        kilometrosTotales += km;
-    }
-
-    public void crearVehiculo() {
-        vehiculosCreados += 1;
+    protected static void setKilometrosTotales(int kms) {
+        kilometrosTotales = kms;
     }
 }
 

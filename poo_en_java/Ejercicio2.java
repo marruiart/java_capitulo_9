@@ -9,10 +9,25 @@
 
 import Clases.Bicicleta;
 import Clases.Coche;
+import Clases.Vehiculo;
 
 import java.util.Scanner;
 
 public class Ejercicio2 {
+
+    private static void printProgram() {
+        System.out.print("\nVEHÍCULOS\n" +
+                "=========\n" +
+                "1. Anda con la bicicleta\n" +
+                "2. Haz el caballito con la bicicleta\n" +
+                "3. Anda con el coche\n" +
+                "4. Quema rueda con el coche\n" +
+                "5. Ver kilometraje de la bicicleta\n" +
+                "6. Ver kilometraje del coche\n" +
+                "7. Ver kilometraje total\n" +
+                "8. Salir\n" +
+                "Elige una opción (1-8): ");
+    }
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         Coche pedro = new Coche("Renault", "Captur");
@@ -28,8 +43,6 @@ public class Ejercicio2 {
                 marta.marca, marta.modelo, marta.kilometrosRecorridos,
                 edu.marca, edu.modelo, edu.kilometrosRecorridos,
                 sara.tipo, sara.kilometrosRecorridos);
-
-        System.out.printf("Hay %d vehículos creados\n\n", Coche.getVehiculosCreados());
 
         int opcion = 0;
         do {
@@ -54,22 +67,17 @@ public class Ejercicio2 {
                         System.out.printf("\nPedro ha recorrido %d km\nMarta ha recorrido %d km\nEdu ha recorrido %d km\n",
                                 pedro.getKilometrosRecorridos(), marta.getKilometrosRecorridos(), edu.getKilometrosRecorridos());
                 case 7 -> System.out.printf("\nEn total han recorrido: %d km\n", Coche.getKilometrosTotales());
-                default -> System.out.println("\nNúmero incorrecto\n");
+                default -> System.out.println("\nOpción incorrecta\n");
             }
-            System.out.printf("\nVEHÍCULOS\n" +
-                    "=========\n" +
-                    "1. Anda con la bicicleta\n" +
-                    "2. Haz el caballito con la bicicleta\n" +
-                    "3. Anda con el coche\n" +
-                    "4. Quema rueda con el coche\n" +
-                    "5. Ver kilometraje de la bicicleta\n" +
-                    "6. Ver kilometraje del coche\n" +
-                    "7. Ver kilometraje total\n" +
-                    "8. Salir\n" +
-                    "Elige una opción (1-8): ");
+            printProgram();
             opcion = s.nextInt();
         } while (opcion != 8);
         System.out.println("Adiós!");
+
+        System.out.println(pedro);
+        System.out.println(marta);
+        System.out.println(edu);
+        System.out.println(sara);
         s.close();
     }
 }
