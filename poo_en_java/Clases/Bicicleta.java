@@ -8,8 +8,6 @@ public class Bicicleta extends Vehiculo {
 
     public TipoBici tipo;
     public int kilometrosRecorridos;
-    private static Bicicleta[] bicicletas;
-
 
     // Métodos
     public void recorre(int km) {

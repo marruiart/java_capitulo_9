@@ -1,9 +1,9 @@
 package Clases;
 
 public class Tiempo {
-    int horas;
-    int min;
-    int seg;
+    private final int horas;
+    private final int min;
+    private final int seg;
 
     public Tiempo(int horas, int min, int seg) {
         this.horas = horas;
