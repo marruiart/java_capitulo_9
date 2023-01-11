@@ -12,11 +12,10 @@
 import clases.Tiempo;
 public class Ejercicio6 {
     public static void main(String[] args) {
-        Tiempo t1 = new Tiempo(2, 30, 30);
-        Tiempo t2 = new Tiempo(0, 35, 32);
-        Tiempo t3 = new Tiempo(0, 30, 40);
-        Tiempo t4 = new Tiempo(0, 35, 20);
-        System.out.println(t1.resta(t2));
-        System.out.println(t3.suma(t4));
+        Tiempo t1 = new Tiempo(1, 20, 30);
+        Tiempo t2 = new Tiempo(0, 30, 40);
+        Tiempo t3 = new Tiempo(0, 35, 20);
+        System.out.println(t1.suma(t2));
+        System.out.println(t2.resta(t3));
     }
 }

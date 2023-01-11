@@ -1,41 +1,59 @@
 package clases;
 
-public class Tiempo {
-    private final int horas;
-    private final int min;
-    private final int seg;
+public class Tiempo implements Cloneable {
+    private final int segundos;
 
-    public Tiempo(int horas, int min, int seg) {
-        this.horas = horas;
-        this.min = min;
-        this.seg = seg;
+    private int getSegundos() {
+        return this.segundos;
+    }
+
+    public Tiempo() {
+        this.segundos = 0;
+    }
+
+    public Tiempo(int segundos) {
+        this.segundos = segundos;
+    }
+
+    public Tiempo(int h, int m, int s) {
+        this.segundos = h * 3600 + m * 60 + s;
+    }
+
+    public Tiempo(Tiempo t) {
+        this(t.getSegundos());
+    }
+
+    @Override
+    protected Tiempo clone() {
+        return new Tiempo(this.getSegundos());
+    }
+
+    private int getHorasEnTiempo() {
+        return Math.abs(this.segundos / 3600);
+    }
+
+    private int getMinutosEnTiempo() {
+        return Math.abs(this.segundos % 3600 / 60);
+    }
+
+    private int getSegundosEnTiempo() {
+        return Math.abs(this.segundos % 3600 % 60);
     }
 
     public Tiempo suma(Tiempo t) {
-        int h, m, s;
-        int totalSeg = this.seg + t.seg;
-        int totalMin = this.min + t.min + ((totalSeg % 59 == 0) ? 0 : 1);
-        s = (totalSeg > 59) ? totalSeg % 60 : totalSeg;
-        m = (totalMin > 59) ? totalMin % 60 : totalMin;
-        h = this.horas + t.horas + ((totalMin % 59 == 0) ? 0 : 1);
-        return new Tiempo(h, m, s);
+        return new Tiempo(this.segundos + t.getSegundos());
     }
 
     public Tiempo resta(Tiempo t) {
-        int h, m, s;
-        int totalHoras = this.horas - t.horas;
-        if (totalHoras < 0)
-            return new Tiempo(0, 0, 0);
-        int totalSeg = this.seg - t.seg;
-        int totalMin = this.min - t.min - ((totalSeg < 0) ? 1 : 0);
-        s = (totalSeg < 0) ? 60 - (-totalSeg) : totalSeg;
-        m = (totalMin < 0) ? 60 - (-totalMin) : totalMin;
-        h = totalHoras - ((totalMin < 0) ? 1 : 0);
-        return new Tiempo(h, m, s);
+        return new Tiempo(this.segundos - t.getSegundos());
     }
 
     @Override
     public String toString() {
-        return this.horas + "h " + this.min + "m " + this.seg + "s";
+        return ((this.segundos < 0) ? "-(" : "") +
+                this.getHorasEnTiempo() + "h " +
+                this.getMinutosEnTiempo() + "m " +
+                this.getSegundosEnTiempo() + "s" +
+                ((this.segundos < 0) ? ")" : "");
     }
 }
