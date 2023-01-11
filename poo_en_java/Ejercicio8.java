@@ -19,7 +19,9 @@ public class Ejercicio8 {
         System.out.println(t1);
         System.out.println(t2);
         t1.llama(t2, 320);
+        t2.recibe(t1, 320);
         t1.llama(t3, 200);
+        t3.recibe(t1, 200);
         System.out.println(t1);
         System.out.println(t2);
         System.out.println(t3);

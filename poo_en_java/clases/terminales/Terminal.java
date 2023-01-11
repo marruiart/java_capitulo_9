@@ -1,11 +1,20 @@
 package clases.terminales;
 
 public class Terminal {
-    private final String numero;
+    private String numero;
     private int tiempoConversacion;
 
+    private Terminal() {
+        this.numero = "123 45 67 89";
+        this.tiempoConversacion = 0;
+    }
+
     public Terminal(String numero) {
-        this.numero = numero;
+        this();
+        if (numero.length() > 0) {
+            this.numero = numero;
+        }
+        this.tiempoConversacion = 0;
     }
 
     public String getNumero() {
@@ -16,9 +25,16 @@ public class Terminal {
         return this.tiempoConversacion;
     }
 
-    public void llama(Terminal receptor, int tiempo) {
+    public void tiempoEnLlamada(int tiempo) {
         this.tiempoConversacion += tiempo;
-        receptor.tiempoConversacion += tiempo;
+    }
+
+    public void llama(Terminal receptor, int tiempo) {
+        this.tiempoEnLlamada(tiempo);
+    }
+
+    public void recibe(Terminal receptor, int tiempo) {
+        this.tiempoEnLlamada(tiempo);
     }
 
     @Override
